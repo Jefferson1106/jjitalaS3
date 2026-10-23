@@ -6,7 +6,7 @@
 
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Marron"/>
+            <Setter Property="BackgroundColor" Value="Maroon"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
@@ -15,37 +15,36 @@
             <Setter Property="TextColor" Value="Red"/>
         </Style>
     </ContentPage.Resources>
-        
-    <VerticalStackLayout Padding="15"
-                     Spacing="15">
-        <Label Text="Registrar Usuario"
-           FontSize="20"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+
+    <VerticalStackLayout
+        Padding="15"
+        Spacing="15">
+        <Label 
+            Text="Registrar Usuario"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 
         <Entry x:Name="txtUsuarioNuevo"
-           Placeholder="Ingresa el nuevo usuario" />
-
+               Placeholder ="Ingresa el nuevo usuario"/>
         <Entry x:Name="txtContrasena"
-           Placeholder="Ingresa la contraseña" />
-
+               Placeholder="Ingresa la contraseña"/>
 
         <Grid ColumnSpacing="15">
             <Grid.RowDefinitions>
-                <RowDefinition />
+                <RowDefinition/>
             </Grid.RowDefinitions>
-
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-
             <Button x:Name="btnGuardarUsuario"
-            Text="Guardar Usuario"
-            Clicked="btnGuardarUsuario_Clicked"
-            Grid.Row="0"
-            Grid.Column="0" />
-
+                    Text="Guardar Usuario"
+                       Style="{StaticResource BotonGlobal}"
+                    Clicked="btnGuardarUsuario_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    />
             <Button x:Name="btnCancelar"
                     Text="Cancelar"
                     Clicked="btnCancelar_Clicked"

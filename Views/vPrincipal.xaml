@@ -6,11 +6,12 @@
     <VerticalStackLayout
         Padding="15"
         Spacing="15">
-        
+
         <Label x:Name="lblUsuario" HorizontalTextAlignment="End"
                FontSize="14"/>
         <Label 
             Text="Ventana Principal"
+            FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         
